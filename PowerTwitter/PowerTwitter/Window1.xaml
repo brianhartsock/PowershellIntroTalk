@@ -1,0 +1,32 @@
+﻿<Window x:Class="PowerTwitter.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="314" Width="366">
+    <Grid Margin="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1* "/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="0" Grid.Row="0" Margin="2" Name="StatusText" TextWrapping="Wrap"></TextBox>
+        <Button Grid.Column="1" Grid.Row="0" Margin="2" Click="Button_Click">Update Status</Button>
+        <ListBox Grid.Row="1" Name="listBox1" Grid.ColumnSpan="2" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="true">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock Text="{Binding XPath=user/name/text()}" Grid.Column="0"/>
+                        <TextBlock Text="{Binding XPath=text/text()}" TextWrapping="Wrap" Grid.Column="1" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

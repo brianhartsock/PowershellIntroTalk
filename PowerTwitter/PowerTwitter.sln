@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerTwitter", "PowerTwitter\PowerTwitter.csproj", "{43E33410-4E21-4E30-90D3-B2DB591CF316}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E33410-4E21-4E30-90D3-B2DB591CF316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E33410-4E21-4E30-90D3-B2DB591CF316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E33410-4E21-4E30-90D3-B2DB591CF316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E33410-4E21-4E30-90D3-B2DB591CF316}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
